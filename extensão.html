@@ -4,130 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            text-align: center;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        nav {
-            background-color: #992729;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        iframe {
-            width: 75%;
-            /* Opcional: centralizar o iframe na tela */
-            display: block;
-            margin: 0 auto;
-            height: 400px;
-            border-radius: 5%;
-        }
-
-        #imagem {
-            width: 50%;
-            border-radius: 5%;
-        }
-
-        h3 {
-            text-align: center;
-            font-size: 20px;
-        }
-
-        p {
-            text-align: justify;
-            font-size: 20px;
-        }
-
-        h1,
-        h3,
-        p {
-            color: #bbd2e6;
-        }
-
-        main {
-            background-color: #2f3449;
-        }
-
-        #txt {
-            color: black;
-        }
-
-        input {
-            background-color: rgb(255, 255, 255);
-        }
-
-        input[type]:hover {
-            background-color: rgb(91, 202, 216);
-        }
-
-        label {
-            color: #bbd2e6;
-        }
-
-        select {
-            cursor: pointer;
-        }
-        footer{
-            background-color: black;
-            color: azure;
-        }
-        #maps{
-            width : 600;
-            height : 450;
-            border:0;
-            padding: 10px 0px 10px 0px
-            
-        }
-        #voltar{
-            color: white;
-        }
-        #voltar:hover{
-            font-size: 20px;
-            color: aqua;
-            margin: 10px 0px 10px 0px;
-        }
-    </style>
+    <title>RecantoDoSagradoCoraçao</title>
+    <link rel="stylesheet" href="pasta.css">
 
 </head>
 
 <body>
     <header>
-        <img src="rsc.jpg" alt="logo.RSC">
+        <img src="img/rsc.png" alt="logo.RSC">
         <h3 id="txt">Recanto do Sagrado Coração (RSC)</h3>
     </header>
     <nav>
-        <a href="sobre nós">Sobre nós</a>
-        <a href="destaque">Destaques</a>
-        <a href="doacoes">Doações</a>
-        <a href="localização">Localização</a>
+        <a href="#sobrenos">Sobre nós</a>
+        <a href="#destaque">Destaques</a>
+        <a href="#doacoes">Doações</a>
+        <a href="#localizacao">Localização</a>
 
     </nav>
     <main>
         <section>
-            <h1>Sobre nós</h1>
+            <h1 id="sobrenos">Sobre nós</h1>
             <iframe src="https://www.youtube.com/embed/9UlmLyq1ZKQ?si=vWvUtAtPZRXHcOIS" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
+        <br>
+        <hr>
         <section>
-            <h1>Destaque</h1>
-            <img id="imagem" src="img.rsc.jpg" alt="imagem de aniversario do rsc">
+            <h1 id="destaque">Destaque</h1>
+            <img id="imagem" src="img/img.rsc.jpg" alt="imagem de aniversario do rsc">
             <h3>Quais os nossos serviços?</h3>
             <p>Os centros de convivência para a terceira idade são espaços vitais de acolhimento e sociabilidade.
                 Geridos pelo setor público, entidades filantrópicas ou pela iniciativa privada, esses locais oferecem
@@ -139,7 +45,9 @@
                 festivos e rodas de conversa que transformam rotinas em novas amizades e vivências inesquecíveis.</p>
         </section>
         <section>
-            <h1>Doações</h1>
+            <br>
+            <hr>
+            <h1 id="doacoes">Doações</h1>
             <form method="post" action="#">
                 <label for="nome">Nome completo:</label>
                 <input type="text" name="Nome completo"><br><br>
@@ -155,8 +63,13 @@
                     <option value="higiene">Materiais de higiene</option>
                     <option value="bem_estar">Produtos de bem-estar</option>
                     <option value="outros">Outros</option>
+                    <br>
+                    <br>
                 </select>
-    <iframe id="maps"
+                <br>
+                <hr>
+                <h1 id="loc">Localização</h1>
+            <iframe id="maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31849.902539969527!2d-38.592716325683554!3d-3.7583333999999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7494f6ab5d619%3A0xb4905080026c5817!2sRecanto%20Sagrado%20Cora%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1777940502338!5m2!1spt-BR!2sbr"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -168,9 +81,9 @@
         <ul>
             <li>Josué Henrique</li>
             <li>João Pedro</li>
-            <li>Nathan</li>
+            <li>Nathanael Rodrigues</li>
         </ul>
-        <a id="voltar" href="#top">Voltar ao topo</a>
+        <a id="voltar" href="#top">Voltar ao topo</a><br>
     </footer>
    
 </body>

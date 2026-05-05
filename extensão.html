@@ -52,20 +52,54 @@
             text-align: justify;
             font-size: 20px;
         }
-        h1, h3, p{
+
+        h1,
+        h3,
+        p {
             color: #bbd2e6;
         }
-        main{
+
+        main {
             background-color: #2f3449;
         }
-        #txt{
+
+        #txt {
             color: black;
         }
-        input{
+
+        input {
             background-color: rgb(255, 255, 255);
         }
-        input[type]:hover{
+
+        input[type]:hover {
             background-color: rgb(91, 202, 216);
+        }
+
+        label {
+            color: #bbd2e6;
+        }
+
+        select {
+            cursor: pointer;
+        }
+        footer{
+            background-color: black;
+            color: azure;
+        }
+        #maps{
+            width : 600;
+            height : 450;
+            border:0;
+            padding: 10px 0px 10px 0px
+            
+        }
+        #voltar{
+            color: white;
+        }
+        #voltar:hover{
+            font-size: 20px;
+            color: aqua;
+            margin: 10px 0px 10px 0px;
         }
     </style>
 
@@ -122,16 +156,23 @@
                     <option value="bem_estar">Produtos de bem-estar</option>
                     <option value="outros">Outros</option>
                 </select>
-                
-
-
-
-
-
+    <iframe id="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31849.902539969527!2d-38.592716325683554!3d-3.7583333999999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7494f6ab5d619%3A0xb4905080026c5817!2sRecanto%20Sagrado%20Cora%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1777940502338!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
             </form>
         </section>
     </main>
-
+    <footer>
+        <h3>Dsesenvolvedores</h3>
+        <ul>
+            <li>Josué Henrique</li>
+            <li>João Pedro</li>
+            <li>Nathan</li>
+        </ul>
+        <a id="voltar" href="#top">Voltar ao topo</a>
+    </footer>
+   
 </body>
 
 </html>
